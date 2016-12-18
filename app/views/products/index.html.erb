@@ -5,6 +5,7 @@
 <table class="table">
   <thead>
     <tr>
+      <th></th>
       <th>Name</th>
       <th>Price</th>
       <th>Quantity</th>
@@ -19,7 +20,8 @@
   <tbody>
     <% @products.each do |product| %>
       <tr>
-        <td> <%= image_tag product.image_url(:thumb).to_s %></td>
+        <td> <%= image_tag product.image_url.to_s, class: "img-circle" %></td>
+        
         <td><%= product.name %></td>
         <td><%= product.price %></td>
         <td><%= product.quantity %></td>
