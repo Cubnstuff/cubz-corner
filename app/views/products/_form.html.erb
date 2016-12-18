@@ -10,7 +10,7 @@
       </ul>
     </div>
   <% end %>
-
+  
   <div class="field">
     <%= f.label :name %><br>
     <%= f.text_field :name %>
@@ -25,21 +25,22 @@
   </div>
   <div class="field">
     <%= f.label :description %><br>
-    <%= f.text_field :description %>
+    <%= f.text_area :description %>
   </div>
   <div class="field">
     <%= f.label :brand %><br>
-    <%= f.text_field :brand %>
+    <%= f.text_field :brand %><br />
   </div>
- <div class="form-group">
- <%= f.select(:category_id, @categories.collect {|c| [c.name, c.id]}, { include_blank: "Please select a category"}) %>
- <div class="form-group">
-   <%= f.submit %>
-    </div>
-    <div class="field">
-      <%= f.file_field :image %>
-    </div>
- 
+  <h1></h1>
+  <div class="form-group">
+    <%= f.select(:category_id, @categories.collect {|c| [c.name, c.id]}, {include_blank: "What system? "}) %>
+  </div>
+  
+  <div class="form-group">
+    <strong>Upload Product Image</strong>
+    <%= f.file_field :image %>
+  </div>
+  
   <div class="actions">
     <%= f.submit %>
   </div>
