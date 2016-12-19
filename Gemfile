@@ -14,12 +14,23 @@ gem 'coffee-rails', '~> 4.1.0'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 gem 'bootstrap-sass'
+
 gem 'font-awesome-rails'
+
 gem 'devise'
+
 gem 'carrierwave'
+
 gem 'mini_magick'
+
 gem 'cancancan'
+
 gem 'pry-rails'
+
+gem 'stripe', :git => 'https://github.com/stripe/stripe-ruby'
+gem 'figaro'
+gem 'certified'
+
 gem 'better_errors', group: :development
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
